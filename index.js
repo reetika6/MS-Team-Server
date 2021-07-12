@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const server = require('http').createServer(app);
 const cors = require('cors');
-const history = [];
+const history = []; // An array of objects to store the meeting id, sender's id, name and message 
 
 const io = require("socket.io")(server, {
   cors: {
